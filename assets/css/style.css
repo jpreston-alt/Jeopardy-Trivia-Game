@@ -1,0 +1,16 @@
+.jumbotron {
+    margin-top: 50px;
+}
+
+.main-container {
+    max-width: 700px;
+}
+
+
+.start-game-btn {
+    margin: 20px;
+}
+
+.display-none {
+    display: none;
+}

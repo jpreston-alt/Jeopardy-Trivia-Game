@@ -22,6 +22,47 @@
 
 <body>
 
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Jeopardy Trivia Game!</a>
+    </nav>
+
+    <div class="container main-container text-center" id="intro-screen">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to Jeopardy!</h1>
+            <p class="lead">Learn more. Get smarter.</p>
+            <hr class="my-4">
+            <p>Press Start Game button to begin, happy learning!</p>
+            <!-- <div class="row">
+                <select class="custom-select" id="filter-category-dropdown">
+                    <option selected>Filter by Category</option>
+                    <option value="random">Random</option>
+                    <option value="2">The Movies</option>
+                    <option value="3">Three</option>
+                </select>
+            </div> -->
+            <div clas="row">
+                <a class="btn btn-primary btn-lg start-game-btn" href="#" role="button">Start Game</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container main-container text-center display-none" id="question-screen">
+        <div class="jumbotron">
+            <h1 class="display-7" id="question-display"></h1>
+            <p class="lead">Category: <span id="category-display"></span></p>
+            <hr class="my-4">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Answer goes here" aria-label="Recipient's username" aria-describedby="button-addon2" id="user-answer">
+                <div class="input-group-append">
+                    <button class="btn btn-primary submit-btn" type="button">Submit</button>
+                </div>
+            </div>
+            <p id="correct-or-not"></p>
+            <a class="btn btn-primary btn-lg next-question-btn" href="#" role="button">Next Question</a>
+        </div>
+    </div>
+
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
